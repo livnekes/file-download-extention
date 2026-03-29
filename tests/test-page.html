@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FileGrab Test Page</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #1a1a2e;
+      color: #e0e0e0;
+    }
+    h1 { color: #e8543a; margin-bottom: 8px; }
+    h2 { color: #ccc; margin-top: 32px; border-bottom: 1px solid #333; padding-bottom: 6px; }
+    p.subtitle { color: #888; margin-bottom: 32px; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 10px 0; }
+    a {
+      color: #5dade2;
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      display: inline-block;
+      transition: all 0.15s;
+    }
+    a:hover { border-color: #e8543a; color: #e8543a; }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      background: rgba(232, 84, 58, 0.15);
+      color: #e8543a;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-left: 8px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>FileGrab Test Page</h1>
+  <p class="subtitle">Open the FileGrab extension on this page to verify it detects all file links below.</p>
+
+  <h2>Documents</h2>
+  <ul>
+    <li><a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">Dummy PDF</a> <span class="badge">PDF</span></li>
+    <li><a href="https://calibre-ebook.com/downloads/demos/demo.docx">Demo DOCX</a> <span class="badge">DOCX</span></li>
+    <li><a href="https://freetestdata.com/wp-content/uploads/2021/09/Free_Test_Data_100KB_DOC.doc">Test DOC file</a> <span class="badge">DOC</span></li>
+    <li><a href="https://freetestdata.com/wp-content/uploads/2021/09/Free_Test_Data_100KB_XLSX.xlsx">Test XLSX</a> <span class="badge">XLSX</span></li>
+    <li><a href="https://freetestdata.com/wp-content/uploads/2021/09/Free_Test_Data_100KB_CSV.csv">Test CSV</a> <span class="badge">CSV</span></li>
+    <li><a href="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-ppt-file.ppt">Sample PPT</a> <span class="badge">PPT</span></li>
+  </ul>
+
+  <h2>Images</h2>
+  <ul>
+    <li><a href="https://www.w3schools.com/css/img_5terre.jpg">Landscape JPG</a> <span class="badge">JPG</span></li>
+    <li><a href="https://www.w3schools.com/css/img_forest.jpg">Forest JPG</a> <span class="badge">JPG</span></li>
+    <li><a href="https://www.w3.org/Graphics/SVG/svglogo.svg">SVG Logo</a> <span class="badge">SVG</span></li>
+    <li><a href="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png">PNG Image</a> <span class="badge">PNG</span></li>
+    <li><a href="https://www.gstatic.com/webp/gallery/1.webp">WebP Image</a> <span class="badge">WEBP</span></li>
+  </ul>
+
+  <h2>Audio</h2>
+  <ul>
+    <li><a href="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3">MP3 Sample</a> <span class="badge">MP3</span></li>
+    <li><a href="https://www.learningcontainer.com/wp-content/uploads/2020/02/Sample-WAV-file.wav">WAV Sample</a> <span class="badge">WAV</span></li>
+    <li><a href="https://filesamples.com/samples/audio/ogg/sample3.ogg">OGG Sample</a> <span class="badge">OGG</span></li>
+  </ul>
+
+  <h2>Video</h2>
+  <ul>
+    <li><a href="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">MP4 Sample</a> <span class="badge">MP4</span></li>
+    <li><a href="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-webm-file.webm">WebM Sample</a> <span class="badge">WEBM</span></li>
+  </ul>
+
+  <h2>Archives</h2>
+  <ul>
+    <li><a href="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-zip-file.zip">ZIP Archive</a> <span class="badge">ZIP</span></li>
+    <li><a href="https://freetestdata.com/wp-content/uploads/2021/09/Free_Test_Data_100KB_RAR.rar">RAR Archive</a> <span class="badge">RAR</span></li>
+    <li><a href="https://freetestdata.com/wp-content/uploads/2021/09/Free_Test_Data_100KB_7Z.7z">7Z Archive</a> <span class="badge">7Z</span></li>
+  </ul>
+
+  <h2>Other</h2>
+  <ul>
+    <li><a href="https://jsonplaceholder.typicode.com/todos/1.json">JSON file</a> <span class="badge">JSON</span></li>
+    <li><a href="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-xml-file.xml">XML file</a> <span class="badge">XML</span></li>
+  </ul>
+
+  <h2>Non-file links (should NOT be detected)</h2>
+  <ul>
+    <li><a href="https://www.google.com">Google Homepage</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
+    <li><a href="#section">Anchor link</a></li>
+    <li><a href="mailto:test@example.com">Email link</a></li>
+  </ul>
+
+</body>
+</html>
